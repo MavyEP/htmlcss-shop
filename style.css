@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    position:absolute;
+    width:100%;
+    height: 100%
+}
+main{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+
+    background-color: red;
+    height: 900px;
+    width: 900px;
+}
+
+ .primoelemento{
+
+    position: absolute;
+    height: 450px;
+    width: 300px;
+    border: 5px solid black;
+    background-image:url(immagini/iphone.jpg);
+    background-repeat: none;
+    background-size: cover;
+
+}
+.secondoelemento {
+    background-color: blue;
+    position: absolute;
+    height: 450px;
+    width: 300px;
+    left: 300px;
+    border: 5px solid black;
+    background-image:url(immagini/computer.jpg);
+    background-repeat: none;
+    background-size: cover;
+}
+.terzoelemento{
+    background-color: blue;
+    position: absolute;
+    height: 450px;
+    width: 300px;
+    left: 600px;
+    border: 5px solid black;
+    background-image:url(immagini/tablet.jpg);
+    background-repeat: none;
+    background-size: cover;
+
+}
+
+#secondariga{
+    position: absolute;
+    top: 450px;
+}
+
+#secondariga .primoelemento {
+    background-image:url(immagini/samsung.jpg);
+    background-repeat: none;
+    background-size: cover;
+}
+#secondariga .secondoelemento {
+    background-image:url(immagini/table2.jpg);
+    background-repeat: none;
+    background-size: cover;
+}
+#secondariga .terzoelemento {
+    background-image:url(immagini/monitor.jpg);
+    background-repeat: none;
+    background-size: cover;
+
+}
+
+div p{
+    position: absolute;
+    background-color: red;
+    display: inline;
+    left: 255px;
+}
+
+#above30 {
+    position: absolute;
+    background-color: blue;
+    display: inline;
+    left: 255px;
+}
+
+div:hover .love {
+    display: block;
+    background-color: white;
+
+}
+.love {
+    display: none;
+    background-color: white;
+    position: absolute;
+    left: 140px;
+    top: 380px;
+    font-size: 40px;
+
+
+
+}
