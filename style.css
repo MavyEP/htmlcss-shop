@@ -1,109 +1,159 @@
-*{
+/*info pagina base*/
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+/*STILE MENU PAGINA*/
+menu div {
+    padding-left: 10px;
+}
+
+menu {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    background-color: MediumSlateBlue;
+    padding-top: 15px;
+    border-bottom: 2px dashed darkblue;
+    border-top: 2px dashed darkblue;
+}
+
+menu img{
+    height: 40px;
+    vertical-align: middle;
+}
+
+.menuitems li {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    background-color: AliceBlue;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-radius: 3px;
+    padding: 0px 30px;
+    margin: 0 10px;
+}
+li a {
+    text-decoration: none;
+}
+
+menu ul{
+    display: inline-block;
+}
+/*FINE ELEMENTI MENU PAGINA*/
+
+/*INIZIO BODY*/
 
 body{
     position:absolute;
     width:100%;
-    height: 100%
+    height: 100%;
+    background-color: SkyBlue;
 }
+
 main{
+    margin-top: 100px;
+    margin-bottom: 20px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50% ,-50%);
-
-    background-color: red;
+    background-color: AliceBlue;
     height: 900px;
     width: 900px;
 }
 
+/*INIZIO LAVORO CONTENUTO BODY - ELEMENTI SHOP*/
+/*PRIMA RIGA DEI PRODOTTI*/
  .primoelemento{
-
     position: absolute;
     height: 450px;
     width: 300px;
-    border: 5px solid black;
-    background-image:url(immagini/iphone.jpg);
+    border: 5px solid PaleVioletRed;
+    background-image:url(immagini/iphone2.png);
     background-repeat: none;
     background-size: cover;
-
 }
+
 .secondoelemento {
-    background-color: blue;
     position: absolute;
     height: 450px;
     width: 300px;
     left: 300px;
-    border: 5px solid black;
-    background-image:url(immagini/computer.jpg);
+    border: 5px solid PaleVioletRed;
+    background-image:url(immagini/computer.png);
     background-repeat: none;
     background-size: cover;
 }
+
 .terzoelemento{
-    background-color: blue;
     position: absolute;
     height: 450px;
     width: 300px;
     left: 600px;
-    border: 5px solid black;
-    background-image:url(immagini/tablet.jpg);
+    border: 5px solid PaleVioletRed;
+    background-image:url(immagini/tablet2.png);
     background-repeat: none;
     background-size: cover;
-
 }
 
+/*SECONDA RIGA DI ELEMENTI*/
 #secondariga{
     position: absolute;
     top: 450px;
 }
 
 #secondariga .primoelemento {
-    background-image:url(immagini/samsung.jpg);
+    background-image:url(immagini/samsung2.png);
     background-repeat: none;
     background-size: cover;
 }
+
 #secondariga .secondoelemento {
-    background-image:url(immagini/table2.jpg);
+    background-image:url(immagini/table22.png);
     background-repeat: none;
     background-size: cover;
 }
+
 #secondariga .terzoelemento {
-    background-image:url(immagini/monitor.jpg);
+    background-image:url(immagini/monitor2.png);
     background-repeat: none;
     background-size: cover;
-
 }
 
+/*LAVORO SUGLI SCONTI DEI PRODOTTI*/
 div p{
     position: absolute;
-    background-color: red;
+    background-color: LightCoral;
     display: inline;
-    left: 255px;
+    left: 253px;
+    font-weight: bold;
 }
 
 #above30 {
     position: absolute;
-    background-color: blue;
+    background-color: LightBlue;
     display: inline;
-    left: 255px;
+    left: 253px;
 }
+
+/*AGGIUNTA CUORICINO PREFERITI SUGLI ELEMENTI DIV DELLE SECTION*/
+
 
 div:hover .love {
     display: block;
-    background-color: white;
+    background-color: AliceBlue;
 
 }
+
 .love {
     display: none;
-    background-color: white;
+    background-color: AliceBlue;
     position: absolute;
     left: 140px;
     top: 380px;
     font-size: 40px;
-
-
-
+    color: PaleVioletRed;
+    text-decoration: none;
 }
